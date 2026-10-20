@@ -46,7 +46,7 @@ const S=[
  {scene:'gift', mode:'side', say:'tớ tặng cậu bó hoa này nè', bars:1.8, mood:'happy', bg:3, fx:{petals:1,meadow:1.1}},
  {say:'một loài hoa không bao giờ héo — vì mỗi cánh là một lời yêu thương', bars:2.4, mood:'talk'},
 
- {scene:'question', mode:'hero', say:'cho tớ hỏi một câu thôi nhé…<br>hôm nay cậu đã <em>khen bản thân</em> chưa?', bars:2, mood:'wink', bg:2, fx:{petals:.3,meteor:1}, wait:true, reveal:['q1']},
+ {scene:'question', mode:'hero', say:'tôi hỏi chi một câu nhá<br>hôm nay cậu đã <em>khen bản thân</em> chưa?', bars:2, mood:'wink', bg:2, fx:{petals:.3,meteor:1}, wait:true, reveal:['q1']},
  {scene:'final', mode:'side', say:'', mood:'happy', bg:3, fx:{fire:1,petals:.9,meadow:1.5}, wait:true, final:true}
 ];
 
@@ -127,9 +127,9 @@ $('#q1').addEventListener('click',e=>{
   waiting=false; $('#q1').classList.remove('on');
   mood('happy'); talk(true);
   if(b.dataset.a==='yes'){
-    say('giỏi quá! cứ khen thật nhiều vào nhé — cậu xứng đáng mà');
+    say('hay đấy nhug bấm vô chưa để xem lời chúc của tôi nhá');
   } else {
-    say('vậy để tớ khen giúp: cậu <em>mạnh mẽ</em> hơn cậu nghĩ, <em>dịu dàng</em> hơn cậu tưởng, và quan trọng hơn cậu vẫn nghĩ rất nhiều');
+    say('vậy nhân dịp 20/10 chúc Chi luôn luôn vui vè hạnh phúc mang trên mih là những nụ cười thay vì sự u buồn nhá');
   }
   clearTimeout(timer); timer=setTimeout(()=>go(idx+1), snap(4.4*BAR));
 });
